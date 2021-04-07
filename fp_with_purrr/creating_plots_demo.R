@@ -73,7 +73,7 @@ plot_fn <- function(org_code, data) {
 # create a filename for the plot: I'm going to store these in a folder called
 # "ae_plots", so let's create this folder
 unlink("ae_plots", TRUE, TRUE) # remove it if it already exists
-dir.create("ae_plots")
+dir.create(here::here(),"ae_plots")
 
 # We are going to use the ggsave function to save the plots, so let's have a
 # quick look at the documentation to see what arguments we need to provide:
